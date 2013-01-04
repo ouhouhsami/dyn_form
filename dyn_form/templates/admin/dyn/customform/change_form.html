@@ -1,0 +1,18 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls %}
+
+{% block content %}
+{{ block.super }}
+
+{% if not add %}
+<fieldset class="module"> 
+	<h2>
+		{{ original.title }} (Preview)
+	</h2>
+	<table>
+		{{ preview_form.as_table }}
+	</table>
+</fieldset>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,7 @@
+* clean the ugly dict
+* extend available fields (and add widget specification) with all fields needed, and add custom params for specific fields (like select ...)
+* improve layer template (using django-crispyforms)
+* add row level permission (edition, and other features) w/ django-guardian
+* add workflow, maybe using django-xworkflows, but in a dynamic way
+* save dynamic created form submission (pickle, hstore postgresql ... ?!)
+* multitenancy support (?) (also for categories)
