@@ -1,10 +1,6 @@
 from django import forms
 
 
-form_config = {'name': forms.CharField(max_length=100),
-    'email': forms.EmailField()}
-
-
 class DynamicForm(forms.Form):
     """ Dynamic Form """
     def __init__(self, config, *args, **kwargs):
